@@ -43,14 +43,6 @@ class AppController extends Controller {
 
 
   /* ====================
-   *   Template Engine
-   * ==================== */
-  public $viewClass = "TwigView.Twig";
-  public $ext = ".tpl";
-
-
-
-  /* ====================
    *   Get Login User ID
    * ==================== */
   public function loginUserID() {
