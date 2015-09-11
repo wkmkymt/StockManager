@@ -1,0 +1,117 @@
+// -*- coding: utf-8 -*-
+
+// ==================================================
+//   Header
+// ==================================================
+
+.site-header {
+  @include siteSection($space-large*3.5, $space-large*1.5);
+
+// ==============================
+//   Title
+// ==============================
+
+  h1 {
+    height: $title-height;
+    line-height: $title-height;
+    font-size: $font-size-large;
+    font-weight: bold;
+    cursor: pointer;
+  }
+
+// ==============================
+//   Top Menu
+// ==============================
+
+  .top-nav {
+    position: absolute;
+    top: $space-large*3.5;
+    right: $space-large;
+    padding: $topMenu-padding - $border-baseSize*2 0;
+
+    >* {
+      height: $title-height - $topMenu-padding*2;
+      float: left;
+    }
+
+    p {
+      @include box-sizing(border-box);
+      margin-right: $space-base*2;
+      padding: $border-baseSize*2 $border-baseSize*2 $border-baseSize;
+      border-bottom: $border-base;
+      line-height: $title-height - $topMenu-padding*2;
+      color: $text-sub-color;
+    }
+
+    >ul {
+      width: $topMenu-width*$topMenu-item;
+
+      >li {
+        display: inline-block;
+        position: relative;
+        width: 100% / $topMenu-item;
+        text-align: center;
+        float: left;
+        cursor: pointer;
+        @include border-radius($br-small);
+        @include transition($transition-base);
+
+        &:last-child {
+          @include border-radius($br-small $br-small 0 0);
+        }
+
+        a {
+          display: block;
+          padding: $border-baseSize*2 $space-base;
+          height: $title-height - $topMenu-padding*2 - $border-baseSize*2*2;
+          line-height: $title-height - $topMenu-padding*2 - $border-baseSize*2*2;
+        }
+
+        ul {
+          position: absolute;
+          z-index: 99;
+          top: 100%;
+          left: 0;
+          width: 100%;
+
+          li {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 0;
+            background-color: $bg-key-color;
+            @include transition($transition-base);
+
+            &:last-child {
+              @include border-radius(0 0 $br-small $br-small);
+            }
+
+            &:hover {
+              background-color: $bg-key-hover-color;
+            }
+
+            a {
+              text-align: center;
+            }
+          }
+        }
+
+        &:hover {
+          background-color: $bg-key-color;
+
+          a {
+            color: $text-main-color;
+          }
+
+          ul {
+            li {
+              overflow: visible;
+              height: $title-height - $topMenu-padding*2;
+              @
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,80 @@
+// -*- coding: utf-8 -*-
+
+// ==================================================
+//   Variables
+// ==================================================
+
+// ==============================
+//   Size
+// ==============================
+
+$content-width: 960px;
+$topMenu-width: 150px;
+
+$title-height: 55px;
+
+$space-base: 10px;
+$space-large: $space-base * 2;
+
+$topMenu-item: 3;
+
+
+// ==============================
+//   Margin / Padding
+// ==============================
+
+$topMenu-padding: 11px;
+
+
+// ==============================
+//   Color
+// ==============================
+
+$key-main-color: $green-light;
+$key-sub-color: $green;
+$key-subsub-color: $purple;
+
+$bg-main-color: $gray-lighter;
+$bg-sub-color: $gray-dark;
+$bg-key-color: $key-main-color;
+$bg-key-hover-color: $key-sub-color;
+
+$text-main-color: $gray-darker;
+$text-sub-color: $gray-light;
+$text-key-color: $green-dark;
+
+$link-color: $gray-lighter;
+$link-hover-color: $key-main-color;
+
+$icon-color: $key-main-color;
+
+
+// ==============================
+//   Typography
+// ==============================
+
+$font-family-base: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica,
+                   "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", "Osaka", Osaka, sans-serif;
+
+$font-size-base: 14px;
+$font-size-small: $font-size-base * 0.8;
+$font-size-large: $font-size-base * 3.2;
+
+
+// ==============================
+//   Misc
+// ==============================
+
+$transition-base: All 0.2s ease;
+
+$br-base: 10px;
+$br-small: 3px;
+
+$border-baseSize: 2px;
+
+$shasow-base: 2px 2px 4px $key-main-color;
+
+
+// ==============================
+//   Media Queries
+// ==============================

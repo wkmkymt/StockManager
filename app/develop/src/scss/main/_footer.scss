@@ -1,0 +1,24 @@
+// -*- coding: utf-8 -*-
+
+// ==================================================
+//   Footer
+// ==================================================
+
+.site-footer {
+  @include siteSection($space-large*6, $space-large*1);
+
+// ==============================
+//   Copyright
+// ==============================
+
+  p {
+    width: 100%;
+    text-align: center;
+
+    small {
+      color: $gray-light;
+      font-size: $font-size-small;
+      font-weight: bold;
+    }
+  }
+}

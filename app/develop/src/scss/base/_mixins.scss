@@ -1,0 +1,21 @@
+// -*- coding: utf-8 -*-
+
+// ==================================================
+//   Mixins
+// ==================================================
+
+@function bp($limitation, $size) {
+  @return "#{$limitation}: #{$size}";
+}
+
+@mixin media($bp) {
+  @media screen and #{$bp} {
+    & {
+      @content;
+    }
+  }
+}
+
+@function solidBorder($color) {
+  @return $border-baseSize solid $color;
+}

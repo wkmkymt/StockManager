@@ -1,0 +1,168 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+}
+
+article,
+section,
+nav,
+aside,
+header,
+footer,
+hgroup,
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  color: #111;
+  font-size: 14px;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック", "Yu Gothic", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", "Osaka", Osaka, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+}
+
+.site-header {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #333;
+}
+.site-header h1 {
+  width: 100%;
+  color: #fff;
+  font-size: 42px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.site-footer {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 30px 20px 10px;
+  background-color: #333;
+}
+.site-footer p {
+  width: 100%;
+  text-align: center;
+}
+.site-footer p small {
+  color: #eee;
+  font-size: 11.2px;
+  font-weight: bold;
+}
+.site-footer p small a {
+  color: #fff;
+}
+.site-footer p small a:hover {
+  color: #888;
+}
+
+.container {
+  width: 960px;
+  min-height: 400px;
+  margin: 40px auto;
+  overflow: hidden;
+  *zoom: 1;
+}
+.container article {
+  width: 620px;
+  margin: 0 10px 0 330px;
+  float: left;
+}
+.container article h2 {
+  font-size: 21px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.container article > div form {
+  overflow: hidden;
+  *zoom: 1;
+}
+.container article > div form .formBox {
+  display: inline-block;
+  padding: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin: 0 10px;
+}
+.container article > div form .textBox {
+  background-color: #aaa;
+}
+.container article > div form .submitBox {
+  background-color: #afa;
+}
+.container article > div form .submitBox:hover {
+  background-color: #f7fff7;
+}
+.container article > div form input {
+  width: 128px;
+  height: 30px;
+  font-size: 16.8px;
+}
+.container article > div form input[type="text"] {
+  border-radius: 5px;
+}
+.container article > div form input[type="submit"] {
+  text-align: center;
+  background-color: #afa;
+}
+.container aside {
+  position: fixed;
+  width: 300px;
+  margin: 0 10px;
+}
+.container aside nav ul {
+  padding: 30px 40px;
+  background-color: #333;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.container aside nav ul li {
+  width: 100%;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #eee;
+  font-size: 16.8px;
+  font-weight: bold;
+  border-bottom: 2px solid #333;
+  cursor: pointer;
+  -moz-transition: All 0.2s ease;
+  -o-transition: All 0.2s ease;
+  -webkit-transition: All 0.2s ease;
+  transition: All 0.2s ease;
+}
+.container aside nav ul li:last-of-type {
+  margin-bottom: 0;
+}
+.container aside nav ul li:hover {
+  border-bottom-color: #888;
+}
